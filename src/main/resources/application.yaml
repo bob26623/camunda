@@ -9,6 +9,10 @@ camunda:
       type: postgres
     table-prefix: camunda.
     schema-update: true
+  rest-api:
+    jwt:
+      secret-path: /key.pub
+      validator-class: com.auth0.jwt.JWTVerifier
 
 spring:
   main:
